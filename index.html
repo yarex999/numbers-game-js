@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <p>GAME-PAGE</p>
+        </div>
+
+        <button id="burger" class="burger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </button>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tic Tac Toe</a></li>
+            <li><a href="#">Cities</a></li>
+            <li><a href="#">Colors</a></li>
+            <li><a href="#">Numbers</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Schulte_table" target="_blank">Rules</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="start display_flex">
+        <div class="start_inner">
+            <div class="start_header_div">
+                <h1 class="start_header">Numbers game</h1>
+            </div>
+            <button class="start_button" onclick="startGame()">start the game</button>
+        </div>
+    </div>
+
+    <div class="game display_none">
+        <div class="game_inner">
+            <div class="timer">
+                <p class="timer_title">time:</p>
+                <p class="timer_number"></p>
+            </div>
+            <div id="parent">
+                <div class="parent_inner">
+                    <table id="field"></table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="end display_none">
+        <div class="end_inner">
+            <h1 class="end_header">Game over!</h1>
+            <div class="current_result_div">
+                <p class="end_result_title">your result is</p>
+                <p class="end_result_number"></p>
+            </div>
+            <div class="best_result_div">
+                <p class="end_result_best">your best result is</p>
+                <p class="end_result_best_number"></p>
+            </div>
+
+            <button class="new_game" onclick="newGame()">start again</button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>
