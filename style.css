@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
-    overflow-y:  scroll;
+    overflow-y: scroll;
     color: rgb(0, 0, 0);
 }
 
@@ -478,12 +478,10 @@ button.start_button:active::before {
     text-align: center;
     font-weight: 700;
     font-size: 45px;
-    margin-top: 15px;
     width: 100%;
     color: rgba(255, 255, 255, 0.9);
     text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
     text-transform: uppercase;
-    margin: 0 0 4%;
     animation: headerEnd 1s linear;
 }
 
@@ -513,6 +511,11 @@ button.start_button:active::before {
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
     margin: 2%;
+}
+
+.current_result_div p {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .end_inner p:nth-child(2),
@@ -584,8 +587,8 @@ button.start_button:active::before {
 .new_game:hover {
     background: #5C1628;
     border: 1px solid rgba(219, 11, 11, 0.05);
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.808);
-    color: rgb(168, 74, 99);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.308);
+    color: rgb(255, 255, 255, 0.5);
     text-decoration: none;
     text-shadow: -1px -1px 0 #000000;
     transition: all 250ms linear;
